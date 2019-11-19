@@ -6,13 +6,12 @@
 /*   By: vgrankul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 13:56:14 by vgrankul          #+#    #+#             */
-/*   Updated: 2019/11/19 11:30:50 by vgrankul         ###   ########.fr       */
+/*   Updated: 2019/11/19 11:59:37 by vgrankul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 #include "libft.h"
-#include <stdio.h>
 
 int	get_line(char **str, char **line, int fd)
 {
