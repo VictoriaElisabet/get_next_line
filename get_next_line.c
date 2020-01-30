@@ -6,12 +6,12 @@
 /*   By: vgrankul <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 13:56:14 by vgrankul          #+#    #+#             */
-/*   Updated: 2019/11/19 11:59:37 by vgrankul         ###   ########.fr       */
+/*   Updated: 2019/11/25 11:26:05 by vgrankul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include "libft.h"
+#include "libft/libft.h"
 
 int	get_line(char **str, char **line, int fd)
 {
@@ -64,7 +64,7 @@ int	get_next_line(const int fd, char **line)
 	{
 		return (-1);
 	}
-	while ((ret = read(fd, arr, BUFF_SIZE)) != 0)
+	while ((ret = read(fd, arr, BUFF_SIZE)) > 0)
 	{
 		if (str[fd] == NULL)
 			if (!(str[fd] = ft_strnew(0)))
