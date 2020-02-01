@@ -10,7 +10,7 @@ To get a better understanding of the computer's memory I also studied the comput
 
 To compile the function and the libft.
 
-The main.c found in the repo can be used for testing purposes or then one of your own.
+The main.c found in the repo can be used for testing purposes or then one of your own. The main.c however need to be modified to your liking depending on if one want to just read one line at a time or to read from multiple file descriptors on the same time.
 ```
 make -C libft/ fclean && make -C libft/
 clang -Wall -Wextra -Werror -I libft/includes -o get_next_line.o -c get_next_line.c
